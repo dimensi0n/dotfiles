@@ -41,6 +41,7 @@ autocmd CursorHold * silent call CocActionAsync('highlight')
 autocmd VimEnter * NERDTree
 autocmd VimEnter * wincmd p
 autocmd BufWinEnter * NERDTreeMirror
+autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
 call plug#end()
 
