@@ -41,7 +41,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec i3-sensible-terminal
+bindsym $mod+Return exec urxvt
 
 # kill focused window
 bindsym $mod+Shift+a kill
@@ -116,6 +116,10 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 
+# Open programs in specific workspace
+assign [class="(?i)vim"] $ws1
+assign [class="(?i)Firefox"] $ws3
+
 # switch to workspace
 bindsym $mod+ampersand workspace number $ws1
 bindsym $mod+eacute workspace number $ws2
@@ -180,4 +184,4 @@ bindsym $mod+r mode "resize"
 #        status_command i3status
 #}
 
-exec_always --no-startup-id "killall polybar;polybar -r center & polybar -r left & polybar -r right"
+exec_always --no-startup-id "killall polybar;polybar default"
