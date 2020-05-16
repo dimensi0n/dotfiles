@@ -20,10 +20,10 @@ call plug#begin('~/.vim/plugged')
 
 " Intellisense
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
-
 Plug 'jlanzarotta/bufexplorer'
-
 Plug 'preservim/nerdtree'
+Plug 'arcticicestudio/nord-vim'
+
 " Better display for messages
 set cmdheight=2
 " Smaller updatetime for CursorHold & CursorHoldI
@@ -43,3 +43,6 @@ autocmd VimEnter * wincmd p
 autocmd BufWinEnter * NERDTreeMirror
 
 call plug#end()
+
+" Theme
+colorscheme nord
