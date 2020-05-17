@@ -8,6 +8,8 @@ set noswapfile
 " Autoclose
 inoremap " ""<left>
 inoremap ' ''<left>
+inoremap ` ``<left>
+inoremap * **<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
