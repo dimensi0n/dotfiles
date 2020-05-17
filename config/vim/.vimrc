@@ -2,6 +2,9 @@
 set shiftwidth=2
 set tabstop=2
 
+" Remove swap file
+set noswapfile
+
 " Autoclose
 inoremap " ""<left>
 inoremap ' ''<left>
