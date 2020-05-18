@@ -29,6 +29,9 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'jlanzarotta/bufexplorer'
 Plug 'preservim/nerdtree'
 Plug 'arcticicestudio/nord-vim'
+Plug 'mattn/emmet-vim'
+
+let g:user_emmet_leader_key='<C-X>'
 
 " Better display for messages
 set cmdheight=2
