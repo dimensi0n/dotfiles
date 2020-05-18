@@ -185,3 +185,10 @@ bindsym $mod+r mode "resize"
 #}
 
 exec_always --no-startup-id "killall polybar;polybar default"
+
+for_window [class="^.*"] border pixel 0
+
+gaps inner 2
+gaps outer 2
+
+
