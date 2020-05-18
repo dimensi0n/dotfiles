@@ -9,6 +9,7 @@ set noswapfile
 inoremap " ""<left>
 inoremap ' ''<left>
 inoremap ` ``<left>
+inoremap < <><left>
 inoremap * **<left>
 inoremap ( ()<left>
 inoremap [ []<left>
@@ -38,7 +39,7 @@ set shortmess+=c
 " always show signcolumns
 "set signcolumn=yes
 
-let g:coc_global_extensions = ['coc-emoji', 'coc-eslint', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-tslint-plugin', 'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml']
+let g:coc_global_extensions = ['coc-emoji', 'coc-eslint', 'coc-prettier', 'coc-tsserver', 'coc-tslint', 'coc-tslint-plugin', 'coc-css', 'coc-json', 'coc-pyls', 'coc-yaml', 'coc-python']
 " Highlight symbol under cursor on CursorHold
 autocmd CursorHold * silent call CocActionAsync('highlight')
 
