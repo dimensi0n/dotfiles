@@ -2,5 +2,5 @@
 # Clone and instal
 git clone https://github.com/gabrielelana/awesome-terminal-fonts.git
 
-cp build/* ~/.fonts
+cp awesome-terminal-fonts/build/* ~/.fonts
 fc-cache -fv ~/.fonts
